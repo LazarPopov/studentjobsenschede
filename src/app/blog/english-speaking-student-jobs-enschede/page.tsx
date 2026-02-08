@@ -1,38 +1,37 @@
-// src/app/guides/best-paying-student-jobs-maastricht-2026/page.tsx
+// src/app/blog/best-paying-student-jobs-enschede-2026/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const BASE_URL = "https://studentjobsmaastricht.nl";
-const SLUG = "best-paying-student-jobs-maastricht-2026";
-
-// This file lives under /guides/, so canonical should match the real route.
-const CANONICAL = `${BASE_URL}/guides/${SLUG}`;
+const BASE_URL = "https://studentjobsenschede.nl";
+const SLUG = "best-paying-student-jobs-enschede-2026";
+const CANONICAL = `${BASE_URL}/blog/${SLUG}`;
 
 const PUBLISH_DATE = "2026-01-02";
 const MODIFIED_DATE = "2026-02-07";
 
-// Image exists in /public/blog/maastricht-bridge.jpg
-const HERO_IMAGE_PATH = "/blog/maastricht-bridge.jpg";
+// Use the real local image in /public/blog/
+const HERO_IMAGE_PATH = "/blog/enschede-bridge.jpg";
 const OG_IMAGE_URL = `${BASE_URL}${HERO_IMAGE_PATH}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: "Best Paying Student Jobs in Maastricht (2026) | Student Jobs Maastricht",
+  title: "Best Paying Student Jobs in Enschede (2026) | Student Jobs Enschede",
   description:
-    "Discover the best paying student jobs in Maastricht in 2026. Compare high paying categories, shift bonuses, and quick certifications like BHV, HACCP, VCA, forklift, and barista.",
+    "Discover the best paying student jobs in Enschede in 2026. Compare high paying categories, shift bonuses, and quick certifications like BHV, HACCP, VCA, forklift, and barista.",
   keywords: [
-    "best paying student jobs Maastricht",
-    "highest paying student jobs Maastricht",
-    "student wage Maastricht",
-    "student jobs Maastricht pay",
-    "English speaking student jobs Maastricht",
+    "best paying student jobs Enschede",
+    "highest paying student jobs Enschede",
+    "high paying student jobs Enschede",
+    "student wage Enschede",
+    "student jobs Enschede pay",
+    "English speaking student jobs Enschede",
     "evening weekend allowance Netherlands",
     "BHV certificate",
     "HACCP certificate",
     "VCA certificate",
     "forklift certificate Netherlands",
-    "barista course Maastricht",
+    "barista course Enschede",
   ],
   alternates: { canonical: CANONICAL },
   robots: {
@@ -47,13 +46,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Best Paying Student Jobs in Maastricht (2026)",
+    title: "Best Paying Student Jobs in Enschede (2026)",
     description:
-      "High paying categories, shift bonuses, and short certifications that can increase your hourly rate in Maastricht.",
+      "High paying categories, shift bonuses, and short certifications that can increase your hourly rate in Enschede.",
     url: CANONICAL,
     type: "article",
     locale: "en_NL",
-    siteName: "Student Jobs Maastricht",
+    siteName: "Student Jobs Enschede",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [
@@ -61,20 +60,20 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
-        alt: "Maastricht bridge and canals",
+        alt: "Enschede bridge and canals",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Paying Student Jobs in Maastricht (2026)",
+    title: "Best Paying Student Jobs in Enschede (2026)",
     description:
-      "Which student jobs pay the most in Maastricht. Categories, allowances, and certifications that raise your hourly rate.",
+      "Which student jobs pay the most in Enschede. Categories, allowances, and certifications that raise your hourly rate.",
     images: [OG_IMAGE_URL],
   },
 };
 
-export default function BestPayingGuideMaastricht() {
+export default function BestPayingGuideEnschede() {
   const updatedLabel = new Date(MODIFIED_DATE).toLocaleDateString("en-NL", {
     year: "numeric",
     month: "long",
@@ -87,17 +86,17 @@ export default function BestPayingGuideMaastricht() {
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Best Paying Student Jobs in Maastricht (2026)
+            Best Paying Student Jobs in Enschede (2026)
           </h1>
 
           <p className="mt-3 text-sm text-slate-600">
-            By <span className="font-medium">Student Jobs Maastricht</span> • Updated {updatedLabel}
+            By <span className="font-medium">Student Jobs Enschede</span> • Updated {updatedLabel}
           </p>
 
           <figure className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
               src={HERO_IMAGE_PATH}
-              alt="Maastricht bridge and canals"
+              alt="Enschede bridge and canals"
               width={1280}
               height={720}
               priority
@@ -106,15 +105,31 @@ export default function BestPayingGuideMaastricht() {
             <figcaption className="px-4 py-3 text-xs text-slate-600">
               Photo credit:{" "}
               <a
-                href="https://www.maastrichtprivateboat.com"
+                href="https://www.enschedeprivateboat.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                maastrichtprivateboat.com
+                enschedeprivateboat.com
               </a>
             </figcaption>
           </figure>
+
+          {/* Quick links to convert */}
+          <div className="mt-6 flex flex-wrap gap-2">
+            <Link href="/jobs?city=Enschede" className="rounded-full border px-3 py-1 text-sm underline">
+              All vacancies (Enschede)
+            </Link>
+            <Link href="/jobs?city=Enschede&english=true" className="rounded-full border px-3 py-1 text-sm underline">
+              English friendly
+            </Link>
+            <Link href="/jobs?city=Enschede&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
+              Evening shifts
+            </Link>
+            <Link href="/jobs?city=Enschede&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
+              Weekend shifts
+            </Link>
+          </div>
         </header>
 
         {/* CONTENT + TOC */}
@@ -185,29 +200,28 @@ export default function BestPayingGuideMaastricht() {
             "
           >
             <p>
-              If you want a higher hourly rate in Maastricht, focus on two levers: role type (category) and premium
+              If you want a higher hourly rate in Enschede, focus on two levers: role type (category) and premium
               shifts. Then add one short certification that unlocks better duties. This guide shows the most common
-              paths that increase pay for students in 2026.
+              paths students use in 2026 to earn more.
             </p>
 
-            <h2 id="top-categories">Top paying categories</h2>
+            <h2 id="top-categories">Top paying categories for students in Enschede</h2>
             <p>
-              Pay varies by age, contract, and experience, but these categories often sit at the higher end for student
-              roles in Maastricht:
+              Pay depends on age, contract type, and experience. These categories often land on the higher end for
+              student jobs in Enschede:
             </p>
-
             <ul>
               <li>
                 <strong>Tutoring and teaching assistant roles</strong>: high pay because you bring a specific skill. See{" "}
                 <Link href="/categories/tutoring">tutoring jobs</Link>.
               </li>
               <li>
-                <strong>Logistics and warehouse shifts</strong>: evening or weekend shifts often come with premiums. See{" "}
+                <strong>Logistics and warehouse shifts</strong>: evenings and weekends often include allowances. See{" "}
                 <Link href="/categories/logistics">logistics</Link> and{" "}
                 <Link href="/categories/delivery">delivery</Link>.
               </li>
               <li>
-                <strong>Events team lead</strong>: lead or supervisor shifts tend to pay more than entry crew. Browse{" "}
+                <strong>Events team lead</strong>: team lead or supervisor shifts tend to pay more than entry crew. Browse{" "}
                 <Link href="/categories/events">events</Link>.
               </li>
               <li>
@@ -215,44 +229,42 @@ export default function BestPayingGuideMaastricht() {
                 <Link href="/categories/sales">sales</Link>.
               </li>
               <li>
-                <strong>Skilled hospitality</strong>: barista, closing shift, and shift lead roles usually pay more than
-                runner roles. Explore <Link href="/categories/hospitality">hospitality</Link>.
+                <strong>Skilled hospitality</strong>: barista, closing shifts, and keyholder roles often pay more than runner roles. Explore{" "}
+                <Link href="/categories/hospitality">hospitality</Link>.
               </li>
             </ul>
 
-            <h2 id="shift-bonuses">Shift bonuses and allowances</h2>
-            <p>You can increase your effective hourly rate by choosing the right schedule and contract:</p>
+            <h2 id="shift-bonuses">Shift bonuses and allowances that boost pay</h2>
+            <p>In Enschede, schedule choice can move your effective hourly rate more than people expect:</p>
             <ul>
               <li>
-                <strong>Evening, night, and weekend premiums</strong>: common in logistics, events, hospitality, and some
-                delivery roles.
+                <strong>Evening, night, and weekend allowances</strong>: common in logistics, events, hospitality, and some delivery roles.
               </li>
               <li>
                 <strong>Holiday pay</strong> (often 8 percent): sometimes paid monthly, sometimes yearly.
               </li>
               <li>
-                <strong>Travel reimbursements</strong>: useful if you commute to Westpoort, Sloterdijk, Schiphol area, or
-                larger venues.
+                <strong>Travel reimbursements</strong>: relevant if you commute to Westpoort, Sloterdijk, or larger venues.
               </li>
             </ul>
 
             <h2 id="certifications">Certifications that increase pay</h2>
-            <p>Short, practical certificates can move you from entry shifts to higher responsibility shifts:</p>
+            <p>Short, practical certificates can unlock better paid duties and shifts:</p>
             <ul>
               <li>
-                <strong>BHV</strong>: emergency response, useful for events and hospitality teams.
+                <strong>BHV</strong>: emergency response, useful in events and hospitality.
               </li>
               <li>
-                <strong>HACCP</strong>: food safety, useful for café, kitchen, and catering roles.
+                <strong>HACCP</strong>: food safety, useful for kitchen, café, and catering roles.
               </li>
               <li>
-                <strong>VCA</strong>: safety certificate, common for fieldwork, build up, and some logistics roles.
+                <strong>VCA</strong>: safety certificate for build up, fieldwork, and some logistics roles.
               </li>
               <li>
                 <strong>Forklift</strong> (heftruck): unlocks warehouse roles that often pay better.
               </li>
               <li>
-                <strong>Barista training</strong>: a fast upgrade in hospitality.
+                <strong>Barista training</strong>: a fast upgrade path in hospitality.
               </li>
             </ul>
 
@@ -260,7 +272,7 @@ export default function BestPayingGuideMaastricht() {
               Tip: ask if the employer reimburses certifications after a probation period.
             </p>
 
-            <h2 id="quick-wins">Quick wins</h2>
+            <h2 id="quick-wins">Quick wins to raise your hourly rate</h2>
             <ul>
               <li>
                 <strong>Target premium shifts</strong> in logistics, events, and hospitality.
@@ -272,7 +284,7 @@ export default function BestPayingGuideMaastricht() {
                 <strong>State travel radius</strong>: for example Centrum, De Pijp, Oud West, Zuidas, Noord, Sloterdijk.
               </li>
               <li>
-                <strong>Upgrade one skill fast</strong>: BHV, VCA, forklift, or barista, then ask for better duties.
+                <strong>Upgrade one skill fast</strong>: BHV, VCA, forklift, or barista, then ask for higher responsibility duties.
               </li>
               <li>
                 <strong>Add English and basic Dutch</strong> (A2) on your CV to unlock more roles.
@@ -282,12 +294,10 @@ export default function BestPayingGuideMaastricht() {
             <h2 id="example-paths">Example upgrade paths</h2>
             <ol>
               <li>
-                <strong>Hospitality runner to barista to shift lead</strong>: take a short barista course, then ask for
-                closing or machine shifts.
+                <strong>Hospitality runner to barista to shift lead</strong>: take a short barista course, then ask for closing or machine shifts.
               </li>
               <li>
-                <strong>Warehouse picker to forklift certified</strong>: do a forklift course and move to better paid
-                stations.
+                <strong>Warehouse picker to forklift certified</strong>: do a forklift course and move to better paid stations.
               </li>
               <li>
                 <strong>Event crew to team lead</strong>: get BHV and volunteer to brief teams.
@@ -301,8 +311,8 @@ export default function BestPayingGuideMaastricht() {
             <div className="rounded-2xl border p-5 bg-white">
               <div className="font-semibold text-lg">Ready to earn more?</div>
               <p className="mt-1">
-                Start here: <Link href="/jobs">see all jobs</Link>,{" "}
-                <Link href="/jobs?english=true">English friendly only</Link>, and browse{" "}
+                Start here: <Link href="/jobs?city=Enschede">see all jobs in Enschede</Link>,{" "}
+                <Link href="/jobs?city=Enschede&english=true">English friendly only</Link>, and browse{" "}
                 <Link href="/categories">categories</Link>. If you are an employer,{" "}
                 <Link href="/employers">feature your job</Link>.
               </p>
@@ -310,16 +320,14 @@ export default function BestPayingGuideMaastricht() {
 
             <h2 id="faq">FAQ</h2>
 
-            <h3>Which student jobs pay the most in Maastricht?</h3>
+            <h3>Which student jobs pay the most in Enschede?</h3>
             <p>
-              Often tutoring, logistics shifts with premiums, event lead roles, and sales with commission. Skilled
-              hospitality roles like barista or shift lead can also pay above entry level.
+              Often tutoring, logistics shifts with allowances, event lead roles, and sales with commission. Skilled hospitality roles like barista or shift lead can also pay above entry level.
             </p>
 
             <h3>How can I quickly increase my hourly rate?</h3>
             <p>
-              Choose premium shifts, get one short certificate such as BHV, VCA, forklift, or barista training, then ask
-              for higher responsibility duties like team lead or machine operator.
+              Choose premium shifts, get one short certificate such as BHV, VCA, forklift, or barista training, then ask for duties with responsibility such as team lead or machine operator.
             </p>
 
             <h3>Do certifications really matter?</h3>
@@ -336,25 +344,25 @@ export default function BestPayingGuideMaastricht() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "Best Paying Student Jobs in Maastricht (2026)",
+              headline: "Best Paying Student Jobs in Enschede (2026)",
               description:
-                "High paying categories, shift bonuses, and certifications that can increase your hourly rate as a student in Maastricht.",
+                "High paying categories, shift bonuses, and certifications that can increase your hourly rate as a student in Enschede.",
               image: [OG_IMAGE_URL],
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               inLanguage: "en-NL",
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Maastricht",
+                name: "Student Jobs Enschede",
                 url: `${BASE_URL}/`,
               },
               publisher: {
                 "@type": "Organization",
-                name: "Student Jobs Maastricht",
+                name: "Student Jobs Enschede",
                 url: `${BASE_URL}/`,
               },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-              about: [{ "@type": "Place", name: "Maastricht" }],
+              about: [{ "@type": "Place", name: "Enschede" }],
             }),
           }}
         />
@@ -366,8 +374,8 @@ export default function BestPayingGuideMaastricht() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Guides", item: `${BASE_URL}/guides` },
-                { "@type": "ListItem", position: 2, name: "Best Paying Student Jobs in Maastricht (2026)", item: CANONICAL },
+                { "@type": "ListItem", position: 1, name: "Blog", item: `${BASE_URL}/blog` },
+                { "@type": "ListItem", position: 2, name: "Best Paying Student Jobs in Enschede (2026)", item: CANONICAL },
               ],
             }),
           }}
@@ -379,14 +387,15 @@ export default function BestPayingGuideMaastricht() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
+              "@id": `${CANONICAL}#faq`,
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Which student jobs pay the most in Maastricht?",
+                  name: "Which student jobs pay the most in Enschede?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
-                      "Often tutoring, logistics shifts with premiums, event lead roles, and sales with commission. Skilled hospitality roles like barista or shift lead can also pay above entry level.",
+                      "Often tutoring, logistics shifts with allowances, event lead roles, and sales with commission. Skilled hospitality roles like barista or shift lead can also pay above entry level.",
                   },
                 },
                 {
@@ -418,7 +427,7 @@ export default function BestPayingGuideMaastricht() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "How to boost your student wage in Maastricht in 2 weeks",
+              name: "How to boost your student wage in Enschede in 2 weeks",
               image: [OG_IMAGE_URL],
               totalTime: "P14D",
               inLanguage: "en-NL",
@@ -432,7 +441,7 @@ export default function BestPayingGuideMaastricht() {
                   "@type": "HowToStep",
                   name: "Pick a higher paying category",
                   text:
-                    "Choose tutoring, logistics shifts with premiums, events lead roles, or sales with commission based on your strengths.",
+                    "Choose tutoring, logistics shifts with allowances, events lead roles, or sales with commission based on your strengths.",
                 },
                 {
                   "@type": "HowToStep",

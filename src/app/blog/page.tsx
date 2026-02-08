@@ -2,57 +2,57 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const CANONICAL = "https://studentjobsmaastricht.nl/blog";
-const OG_IMAGE_URL = "https://studentjobsmaastricht.nl/blog/maastricht-bridge.jpg";
+const CANONICAL = "https://studentjobsenschede.nl/blog";
+const OG_IMAGE_URL = "https://studentjobsenschede.nl/blog/enschede-bridge.jpg";
 
 const POSTS = [
   {
-    slug: "studenten-bijbaan-maastricht",
-    title: "Studenten bijbaan Maastricht (2026) – Goed betaald, Engelstalig & weekend",
+    slug: "studenten-bijbaan-enschede",
+    title: "Studenten bijbaan Enschede (2026) – Goed betaald, Engelstalig & weekend",
     description:
-      "De ultieme gids voor een studenten bijbaan in Maastricht: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
+      "De ultieme gids voor een studenten bijbaan in Enschede: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
   },
   {
-    slug: "student-jobs-maastricht-complete-guide-2026",
-    title: "Student Jobs in Maastricht — Complete Guide (2026)",
+    slug: "student-jobs-enschede-complete-guide-2026",
+    title: "Student Jobs in Enschede — Complete Guide (2026)",
     description:
       "Permits, contracts, pay, neighborhoods, and tactics to land a job fast.",
   },
   {
-    slug: "english-speaking-student-jobs-maastricht",
-    title: "English-Speaking Student Jobs in Maastricht (2026)",
+    slug: "english-speaking-student-jobs-enschede",
+    title: "English-Speaking Student Jobs in Enschede (2026)",
     description:
       "Where to find roles that don’t require Dutch, with quick-apply tips.",
   },
   {
-    slug: "best-paying-student-jobs-maastricht-2026",
-    title: "Best-Paying Student Jobs in Maastricht (2026)",
+    slug: "best-paying-student-jobs-enschede-2026",
+    title: "Best-Paying Student Jobs in Enschede (2026)",
     description:
       "Shift bonuses, industries, and certifications that increase pay.",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Maastricht Student Jobs Blog (2026) | Student Jobs Maastricht",
+  title: "Enschede Student Jobs Blog (2026) | Student Jobs Enschede",
   description:
-    "Maastricht student job guides for 2026: English-friendly part-time jobs, pay, contracts, permits, CV tips, and where to apply fast.",
+    "Enschede student job guides for 2026: English-friendly part-time jobs, pay, contracts, permits, CV tips, and where to apply fast.",
   alternates: { canonical: CANONICAL },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Maastricht Student Jobs Blog (2026) | Student Jobs Maastricht",
+    title: "Enschede Student Jobs Blog (2026) | Student Jobs Enschede",
     description:
-      "Guides on Maastricht student jobs: English-speaking roles, wages, contracts, permits, and quick application tactics.",
+      "Guides on Enschede student jobs: English-speaking roles, wages, contracts, permits, and quick application tactics.",
     url: CANONICAL,
     type: "website",
     locale: "en_NL",
-    siteName: "Student Jobs Maastricht",
-    images: [{ url: OG_IMAGE_URL, width: 1200, height: 630, alt: "Maastricht bridge" }],
+    siteName: "Student Jobs Enschede",
+    images: [{ url: OG_IMAGE_URL, width: 1200, height: 630, alt: "Enschede bridge" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maastricht Student Jobs Blog (2026) | Student Jobs Maastricht",
+    title: "Enschede Student Jobs Blog (2026) | Student Jobs Enschede",
     description:
-      "Find English-friendly student jobs in Maastricht: pay, contracts, permits, and fast apply tips.",
+      "Find English-friendly student jobs in Enschede: pay, contracts, permits, and fast apply tips.",
     images: [OG_IMAGE_URL],
   },
 };
@@ -64,20 +64,20 @@ export default function BlogIndex() {
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold">Blog</h1>
           <p className="mt-3 text-slate-700">
-            Maastricht student jobs: English-friendly roles, pay, contracts, permits, and quick apply tactics.
+            Enschede student jobs: English-friendly roles, pay, contracts, permits, and quick apply tactics.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
-            <Link href="/jobs?city=Maastricht" className="rounded-full border px-3 py-1 text-sm underline">
-              All jobs (Maastricht)
+            <Link href="/jobs?city=Enschede" className="rounded-full border px-3 py-1 text-sm underline">
+              All jobs (Enschede)
             </Link>
-            <Link href="/jobs?city=Maastricht&english=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Enschede&english=true" className="rounded-full border px-3 py-1 text-sm underline">
               English-friendly
             </Link>
-            <Link href="/jobs?city=Maastricht&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Enschede&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
               Weekend
             </Link>
-            <Link href="/jobs?city=Maastricht&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Enschede&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
               Evening
             </Link>
           </div>
@@ -104,11 +104,11 @@ export default function BlogIndex() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Blog",
-              name: "Student Jobs Maastricht — Blog",
+              name: "Student Jobs Enschede — Blog",
               url: CANONICAL,
               description:
-                "Maastricht student job guides for 2026: English-friendly part-time jobs, pay, contracts, permits, CV tips, and where to apply fast.",
-              publisher: { "@type": "Organization", name: "Student Jobs Maastricht" },
+                "Enschede student job guides for 2026: English-friendly part-time jobs, pay, contracts, permits, CV tips, and where to apply fast.",
+              publisher: { "@type": "Organization", name: "Student Jobs Enschede" },
               blogPost: POSTS.map((p) => ({
                 "@type": "BlogPosting",
                 headline: p.title,

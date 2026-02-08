@@ -1,5 +1,5 @@
 // src/data/jobs.ts
-// Central job data + helpers (Maastricht). Auto-builds `shortDescrition` to include per-gig/per-sale amount + a concise text from `descriptionHtml`.
+// Central job data + helpers (Enschede). Auto-builds `shortDescrition` to include per-gig/per-sale amount + a concise text from `descriptionHtml`.
 // Also adds a place for a per-listing logo (logoUrl/logoAlt).
 
 // src/data/jobs.ts — add an external URL for outbound clicks
@@ -22,7 +22,7 @@ export type JobRecord = {
   baseSalaryMax?: number;
   currency?: "EUR";
   payUnit?: "HOUR" | "MONTH";
-  addressLocality: "Maastricht";
+  addressLocality: "Enschede";
   addressRegion?: string;
   postalCode?: string;
   streetAddress?: string;
@@ -96,7 +96,7 @@ type RawJob = Omit<JobRecord, "shortDescrition">;
 
 const RAW_JOBS: RawJob[] = [
   {
-  slug: "domakin-agent-maastricht",
+  slug: "domakin-agent-enschede",
   title: "Domakin Student Agent",
   orgName: "Domakin",
   descriptionHtml:
@@ -129,7 +129,7 @@ const RAW_JOBS: RawJob[] = [
     "<p><strong>Do work that matters.</strong> Every viewing and every verified room can be the difference between a student having a home, or being stuck for months.</p>",
   employmentType: "PART_TIME",
   currency: "EUR",
-  addressLocality: "Maastricht",
+  addressLocality: "Enschede",
   area: "All around the Netherlands",
   englishFriendly: true,
   workHours: "6 to 20 h/week, flexible",
@@ -177,7 +177,7 @@ const RAW_JOBS: RawJob[] = [
   DUO: true,
   currency: "EUR",
   payUnit: "HOUR",
-  addressLocality: "Maastricht",
+  addressLocality: "Enschede",
   area: "Online tutoring",
   englishFriendly: true,
   workHours: "1–20 h/week",
@@ -190,18 +190,18 @@ const RAW_JOBS: RawJob[] = [
   logoAlt: "AcademiaAI logo",
 },
     {
-    slug: "pepperminds-door-to-door-sales-maastricht",
+    slug: "pepperminds-door-to-door-sales-enschede",
     title: "Door-to-Door Sales",
     orgName: "Pepperminds",
   
     descriptionHtml:
-     "<p><strong>DUTCH REUQIRED! Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Maastricht. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is not required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
+     "<p><strong>DUTCH REUQIRED! Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Enschede. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is not required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
     employmentType: "PART_TIME",
     baseSalaryMax: 20,
     DUO: true,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     area: "Various districts",
     englishFriendly: false,
     workHours: "10–20 h/week",
@@ -226,7 +226,7 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
   DUO: true,
   currency: "EUR",
   payUnit: "HOUR",
-  addressLocality: "Maastricht",
+  addressLocality: "Enschede",
   area: "Citywide / Multiple cities",
   englishFriendly: true,
   workHours: "Flexible shifts, 6–30 h/week",
@@ -241,19 +241,19 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
 },
 
   {
-slug: "uber-eats-courier-maastricht",
+slug: "uber-eats-courier-enschede",
 title: "Uber Eats Courier",
 orgName: "Uber",
 descriptionHtml:
-"<p><strong>Earn on your own schedule</strong> delivering with the Uber app in Maastricht. Be your own boss, choose when you work, and track your earnings in real time.</p><p><strong>Limited-time promo:</strong> <strong>Receive an extra €750</strong> after you sign up and complete <strong>50 trips within 90 days</strong>. *Eligibility applies; see additional terms on Uber’s site.</p><ul><li><strong>Flexible hours</strong> — ride when it suits you (great alongside studies or another job).</li><li><strong>Fast onboarding</strong> — easy sign-up and start delivering once you’re approved.</li><li><strong>Real-time earnings</strong> — see trip totals live and cash out with available payout options.</li><li><strong>Multiple modes</strong> — deliver by bike, scooter, or car (requirements vary by city).</li><li><strong>Refer & earn</strong> — invite friends to drive or deliver and earn once they complete trips.</li></ul><p><strong>Join today</strong> and start delivering in Maastricht — the city’s always moving.</p>",
+"<p><strong>Earn on your own schedule</strong> delivering with the Uber app in Enschede. Be your own boss, choose when you work, and track your earnings in real time.</p><p><strong>Limited-time promo:</strong> <strong>Receive an extra €750</strong> after you sign up and complete <strong>50 trips within 90 days</strong>. *Eligibility applies; see additional terms on Uber’s site.</p><ul><li><strong>Flexible hours</strong> — ride when it suits you (great alongside studies or another job).</li><li><strong>Fast onboarding</strong> — easy sign-up and start delivering once you’re approved.</li><li><strong>Real-time earnings</strong> — see trip totals live and cash out with available payout options.</li><li><strong>Multiple modes</strong> — deliver by bike, scooter, or car (requirements vary by city).</li><li><strong>Refer & earn</strong> — invite friends to drive or deliver and earn once they complete trips.</li></ul><p><strong>Join today</strong> and start delivering in Enschede — the city’s always moving.</p>",
 baseSalaryMin: 12,
 employmentType: "PART_TIME",
 baseSalaryMax: 25,
 DUO: true,
 currency: "EUR",
 payUnit: "HOUR",
-addressLocality: "Maastricht",
-area: "Maastricht & nearby districts",
+addressLocality: "Enschede",
+area: "Enschede & nearby districts",
 englishFriendly: true,
 workHours: "Flexible — you choose",
 datePosted: new Date().toISOString().slice(0, 10),
@@ -271,8 +271,8 @@ logoAlt: "Uber logo",
 
 const NEW_JOBS: RawJob[] = [
   {
-    slug: "picnic-delivery-driver-Maastricht",
-    title: "Picnic Delivery Driver (Maastricht area)",
+    slug: "picnic-delivery-driver-Enschede",
+    title: "Picnic Delivery Driver (Enschede area)",
     orgName: "Picnic",
     descriptionHtml:
       "<p>Deliver groceries from a Picnic hub, tips on top, weekly pay, and flexible scheduling.</p>",
@@ -281,7 +281,7 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMax: 15.96,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "16 to 40 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -290,13 +290,13 @@ const NEW_JOBS: RawJob[] = [
   },
 
   {
-    slug: "albert-heijn-medewerker-allround-Maastricht",
+    slug: "albert-heijn-medewerker-allround-Enschede",
     title: "Albert Heijn Medewerker Allround (Store shifts)",
     orgName: "Albert Heijn",
     descriptionHtml:
       "<p>Allround supermarket role: shelves, self scan area, produce, and service. Varied store shifts and lots of teamwork.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible store shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -304,13 +304,13 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://werk.ah.nl/vacature/12051/medewerker-allround-5",
   },
   {
-    slug: "albert-heijn-stock-associate-Maastricht",
-    title: "Albert Heijn Stock Associate (Maastricht)",
+    slug: "albert-heijn-stock-associate-Enschede",
+    title: "Albert Heijn Stock Associate (Enschede)",
     orgName: "Albert Heijn",
     descriptionHtml:
       "<p>Stock and shelf replenishment in store. Flexible hours and a classic student friendly retail job.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -318,55 +318,55 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://werk.ah.nl/en/vacancy/38370/stock-associate-60",
   },
   {
-    slug: "primark-verkoopmedewerker-damrak-Maastricht",
-    title: "Primark Verkoopmedewerker (Maastricht Damrak)",
+    slug: "primark-verkoopmedewerker-damrak-Enschede",
+    title: "Primark Verkoopmedewerker (Enschede Damrak)",
     orgName: "Primark",
     descriptionHtml:
-      "<p>Retail assistant role in the Maastricht store, customer help, stock, and keeping the shop floor tidy. Part time roles listed on Primark careers.</p>",
+      "<p>Retail assistant role in the Enschede store, customer help, stock, and keeping the shop floor tidy. Part time roles listed on Primark careers.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Part time",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["retail"],
-    externalUrl: "https://careers.primark.com/en/location/maastricht-jobs/8171/2750405-2749879-2759794/4",
+    externalUrl: "https://careers.primark.com/en/location/enschede-jobs/8171/2750405-2749879-2759794/4",
   },
   {
-    slug: "decathlon-verkoopmedewerker-Maastricht",
-    title: "Decathlon Verkoopmedewerker (Maastricht)",
+    slug: "decathlon-verkoopmedewerker-Enschede",
+    title: "Decathlon Verkoopmedewerker (Enschede)",
     orgName: "Decathlon",
     descriptionHtml:
-      "<p>Help customers with sport advice, keep shelves stocked, support inventory and freight flow. Retail job in Maastricht.</p>",
+      "<p>Help customers with sport advice, keep shelves stocked, support inventory and freight flow. Retail job in Enschede.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Store shifts, typically evenings and weekends",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["retail"],
-    externalUrl: "https://www.werkenbijdecathlon.nl/vacatures/verkoopmedewerker-maastricht-5654553",
+    externalUrl: "https://www.werkenbijdecathlon.nl/vacatures/verkoopmedewerker-enschede-5654553",
   },
   {
-    slug: "coffeecompany-barista-maastricht-oost-Maastricht",
-    title: "Barista Coffeecompany Maastricht Oost",
+    slug: "coffeecompany-barista-enschede-oost-Enschede",
+    title: "Barista Coffeecompany Enschede Oost",
     orgName: "Coffeecompany (via Albron)",
     descriptionHtml:
       "<p>Flexible barista job that pairs well with studying. Learn coffee skills and work in a fast paced team.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl: "https://www.werkenbijalbron.nl/vacatures/barista-coffeecompany-maastricht-oost-maastricht-1129740",
+    externalUrl: "https://www.werkenbijalbron.nl/vacatures/barista-coffeecompany-enschede-oost-enschede-1129740",
   },
   {
-    slug: "bagels-beans-allround-medewerker-Maastricht",
-    title: "Bagels and Beans Allround Medewerker (Maastricht)",
+    slug: "bagels-beans-allround-medewerker-Enschede",
+    title: "Bagels and Beans Allround Medewerker (Enschede)",
     orgName: "Bagels and Beans",
     descriptionHtml:
-      "<p>Daytime hospitality role: service, prep, coffee, and team support. Multiple Maastricht locations recruit via the Bagels and Beans job site.</p>",
+      "<p>Daytime hospitality role: service, prep, coffee, and team support. Multiple Enschede locations recruit via the Bagels and Beans job site.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Day shifts, usually no late evenings",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -374,25 +374,25 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://www.werkenbijbagelsbeans.nl/",
   },
   {
-    slug: "starbucks-barista-maastricht-zuid-cs-Maastricht",
-    title: "Barista Starbucks Maastricht Zuid CS",
+    slug: "starbucks-barista-enschede-zuid-cs-Enschede",
+    title: "Barista Starbucks Enschede Zuid CS",
     orgName: "SSP (Starbucks store)",
     descriptionHtml:
-      "<p>Barista role at a Starbucks location in Maastricht. Customer focused work, training, and shift flexibility.</p>",
+      "<p>Barista role at a Starbucks location in Enschede. Customer focused work, training, and shift flexibility.</p>",
     employmentType: "PART_TIME",
     baseSalaryMin: 14.91,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Shifts, weekend availability commonly requested",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl: "https://nl.indeed.com/q-barista-starbucks-l-maastricht-vacatures.html",
+    externalUrl: "https://nl.indeed.com/q-barista-starbucks-l-enschede-vacatures.html",
   },
   {
-    slug: "sales-promotor-rai-Maastricht",
-    title: "Sales Promotor at RAI (Maastricht)",
+    slug: "sales-promotor-rai-Enschede",
+    title: "Sales Promotor at RAI (Enschede)",
     orgName: "YoungCapital (RAI assignment)",
     descriptionHtml:
       "<p>Demonstrate products on the RAI floor and engage visitors. Listed pay is €15 per hour.</p>",
@@ -400,21 +400,21 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMin: 15.0,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "32 to 40 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["sales", "events"],
-    externalUrl: "https://www.youngcapital.nl/vacatures/5701070-fulltime-sales-promotor-in-maastricht-15-p-u",
+    externalUrl: "https://www.youngcapital.nl/vacatures/5701070-fulltime-sales-promotor-in-enschede-15-p-u",
   },
   {
-    slug: "johan-cruijff-arena-steward-host-Maastricht",
+    slug: "johan-cruijff-arena-steward-host-Enschede",
     title: "Johan Cruijff ArenA Event Crew (Steward, Host, Bar)",
     orgName: "Randstad (Johan Cruijff ArenA)",
     descriptionHtml:
       "<p>Work matches and concerts as event crew. Typical student setup with a few events per month and short shifts per event.</p>",
     employmentType: "TEMPORARY",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "2 to 5 events per month, about 4.5 hours per event",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -422,7 +422,7 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://www.randstad.nl/werknemers/vacatures/topwerkgevers/johan-cruijff-arena",
   },
   {
-    slug: "pal-voor-de-klas-teaching-assistant-Maastricht",
+    slug: "pal-voor-de-klas-teaching-assistant-Enschede",
     title: "PAL voor de Klas (Teaching Assistant) via UvA and VU",
     orgName: "PAL voor de Klas",
     descriptionHtml:
@@ -431,7 +431,7 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMin: 11.0,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "About 8 h/week (minimum availability typically 4 h/week)",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -439,13 +439,13 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://student.uva.nl/informatie/assisteren-bij-onderwijs",
   },
   {
-    slug: "rai-flexpool-event-crew-Maastricht",
+    slug: "rai-flexpool-event-crew-Enschede",
     title: "RAI Flexpool (Event crew, hospitality, floor support)",
-    orgName: "RAI Maastricht",
+    orgName: "RAI Enschede",
     descriptionHtml:
-      "<p>Work flexible event shifts at RAI Maastricht via their flex routes. Roles vary per event and department.</p>",
+      "<p>Work flexible event shifts at RAI Enschede via their flex routes. Roles vary per event and department.</p>",
     employmentType: "TEMPORARY",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Event based shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -453,31 +453,31 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://careers.rai.nl/departments/flex",
   },
   {
-    slug: "lidl-verkoopmedewerker-maastricht-herculeshof-16-32-Maastricht",
-    title: "Lidl Verkoopmedewerker Maastricht Herculeshof (16 to 32 h/week)",
+    slug: "lidl-verkoopmedewerker-enschede-herculeshof-16-32-Enschede",
+    title: "Lidl Verkoopmedewerker Enschede Herculeshof (16 to 32 h/week)",
     orgName: "Lidl",
     descriptionHtml:
       "<p>Allround supermarket role: fill shelves, keep the store tidy, help customers, and work the register. Flexible shifts, including evenings and weekends.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     area: "Herculeshof",
     workHours: "16 to 32 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["retail"],
     externalUrl:
-      "https://www.werkenbijlidl.nl/jobs/verkoopmedewerker-maastricht-herculeshof-16-32-uur-maastricht-596909",
+      "https://www.werkenbijlidl.nl/jobs/verkoopmedewerker-enschede-herculeshof-16-32-uur-enschede-596909",
   },
 
   {
-    slug: "gamma-bijbaan-verkoopmedewerker-maastricht-belvedere-Maastricht",
-    title: "GAMMA Bijbaan Verkoopmedewerker (Maastricht Belvédère, 3 to 12 h/week)",
+    slug: "gamma-bijbaan-verkoopmedewerker-enschede-belvedere-Enschede",
+    title: "GAMMA Bijbaan Verkoopmedewerker (Enschede Belvédère, 3 to 12 h/week)",
     orgName: "GAMMA",
     descriptionHtml:
       "<p>DIY store assistant job: help customers, learn products, keep aisles tidy, and support the team. Flexible availability, evenings and weekends. Dutch required.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
-    area: "Maastricht Belvédère",
+    addressLocality: "Enschede",
+    area: "Enschede Belvédère",
     workHours: "3 to 12 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-04-07",
@@ -486,17 +486,17 @@ const NEW_JOBS: RawJob[] = [
   },
 
   {
-    slug: "lidl-bijbaan-weekendhulp-vakkenvuller-kassamedewerker-kies-winkel-Maastricht",
-    title: "Lidl Bijbaan (Weekendhulp, Vakkenvuller, Kassamedewerker) choose Maastricht store",
+    slug: "lidl-bijbaan-weekendhulp-vakkenvuller-kassamedewerker-kies-winkel-Enschede",
+    title: "Lidl Bijbaan (Weekendhulp, Vakkenvuller, Kassamedewerker) choose Enschede store",
     orgName: "Lidl",
     descriptionHtml:
-      "<p>Student job at Lidl. Apply once and select one or more Maastricht stores during the application. Roles include shelf stacking, cashier, and general store support. Hourly pay depends on age and hours.</p>",
+      "<p>Student job at Lidl. Apply once and select one or more Enschede stores during the application. Roles include shelf stacking, cashier, and general store support. Hourly pay depends on age and hours.</p>",
     employmentType: "PART_TIME",
     baseSalaryMin: 6.06,
     baseSalaryMax: 19.08,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -505,13 +505,13 @@ const NEW_JOBS: RawJob[] = [
   },
 
   {
-    slug: "hema-winkelmedewerker-kies-maastricht-Maastricht",
-    title: "HEMA Store roles (choose Maastricht in the vacancy search)",
+    slug: "hema-winkelmedewerker-kies-enschede-Enschede",
+    title: "HEMA Store roles (choose Enschede in the vacancy search)",
     orgName: "HEMA",
     descriptionHtml:
-      "<p>HEMA store jobs like winkelmedewerker or horecamedewerker. Use the vacancy search and filter for Maastricht to see the current open roles.</p>",
+      "<p>HEMA store jobs like winkelmedewerker or horecamedewerker. Use the vacancy search and filter for Enschede to see the current open roles.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Varies by store",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -520,13 +520,13 @@ const NEW_JOBS: RawJob[] = [
   },
 
   {
-    slug: "primark-retail-assistant-zoek-maastricht-Maastricht",
-    title: "Primark Retail Assistant (search Maastricht on the Primark job site)",
+    slug: "primark-retail-assistant-zoek-enschede-Enschede",
+    title: "Primark Retail Assistant (search Enschede on the Primark job site)",
     orgName: "Primark",
     descriptionHtml:
-      "<p>Retail Assistant roles at Primark. Use the Primark vacancies search and select Maastricht to see the currently open positions.</p>",
+      "<p>Retail Assistant roles at Primark. Use the Primark vacancies search and select Enschede to see the currently open positions.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Store shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -539,23 +539,23 @@ RAW_JOBS.push(...NEW_JOBS);
 
 const NEW_JOBS2: RawJob[] = [
   {
-    slug: "kfc-horecamedewerker-maastricht-parttime-Maastricht",
-    title: "KFC Horecamedewerker (Maastricht, part time)",
+    slug: "kfc-horecamedewerker-enschede-parttime-Enschede",
+    title: "KFC Horecamedewerker (Enschede, part time)",
     orgName: "KFC",
     descriptionHtml:
       "<p>Fast paced hospitality job: help guests, prepare orders, keep the restaurant clean, and work in a team. Shifts typically include evenings and weekends.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Shifts (part time)",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl: "https://careers.kfc.nl/vacatures/horecamedewerker/kfc-maastricht/80574",
+    externalUrl: "https://careers.kfc.nl/vacatures/horecamedewerker/kfc-enschede/80574",
   },
 
   {
-    slug: "bastion-supervisor-housekeeping-maastricht-30-38-Maastricht",
-    title: "Bastion Hotels Supervisor Housekeeping (Maastricht, 30 to 38 h/week)",
+    slug: "bastion-supervisor-housekeeping-enschede-30-38-Enschede",
+    title: "Bastion Hotels Supervisor Housekeeping (Enschede, 30 to 38 h/week)",
     orgName: "Bastion Hotels",
     descriptionHtml:
       "<p>Lead the housekeeping team, plan daily operations, and quality-check rooms and public areas. Listed starting salary is €2364.04 gross per month based on a 38 hour week, plus allowances.</p>",
@@ -564,13 +564,13 @@ const NEW_JOBS2: RawJob[] = [
     baseSalaryMax: 2364.04,
     currency: "EUR",
     payUnit: "MONTH",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "30 to 38 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
     externalUrl:
-      "https://www.werkenbijbastionhotels.nl/maastricht/shiftleader-housekeeping",
+      "https://www.werkenbijbastionhotels.nl/enschede/shiftleader-housekeeping",
   },
 ];
 
@@ -578,13 +578,13 @@ RAW_JOBS.push(...NEW_JOBS2);
 
 const NEW_JOBS3: RawJob[] = [
   {
-    slug: "jumbo-vakkenvuller-maastricht-avond-weekend-Maastricht",
+    slug: "jumbo-vakkenvuller-enschede-avond-weekend-Enschede",
     title: "Jumbo Vakkenvuller (Evening and Weekend shifts)",
     orgName: "Jumbo",
     descriptionHtml:
       "<p>Stock shelves, assist customers, and keep the supermarket organized. Typical student job with evening and weekend shifts.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible evening and weekend shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -592,13 +592,13 @@ const NEW_JOBS3: RawJob[] = [
     externalUrl: "https://www.werkenbijjumbo.nl/vacatures",
   },
   {
-    slug: "thuisbezorgd-bezorger-maastricht-Maastricht",
-    title: "Thuisbezorgd Delivery Driver (Maastricht)",
+    slug: "thuisbezorgd-bezorger-enschede-Enschede",
+    title: "Thuisbezorgd Delivery Driver (Enschede)",
     orgName: "Thuisbezorgd.nl",
     descriptionHtml:
-      "<p>Deliver meals by bike or scooter in Maastricht. Flexible hours, contract based employment, and paid per hour.</p>",
+      "<p>Deliver meals by bike or scooter in Enschede. Flexible hours, contract based employment, and paid per hour.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     englishFriendly: true,
     workHours: "Flexible shifts",
     datePosted: new Date().toISOString().slice(0, 10),
@@ -607,13 +607,13 @@ const NEW_JOBS3: RawJob[] = [
     externalUrl: "https://www.justeattakeaway.com/careers/jobs",
   },
   {
-    slug: "dominos-pizza-bezorger-maastricht-Maastricht",
-    title: "Domino's Pizza Delivery Driver (Maastricht)",
+    slug: "dominos-pizza-bezorger-enschede-Enschede",
+    title: "Domino's Pizza Delivery Driver (Enschede)",
     orgName: "Domino's Pizza",
     descriptionHtml:
       "<p>Deliver pizzas and assist in store during quieter hours. Evening focused shifts, suitable for students.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Evenings and weekends",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -621,13 +621,13 @@ const NEW_JOBS3: RawJob[] = [
     externalUrl: "https://www.werkenbijdominos.nl/vacatures",
   },
   {
-    slug: "action-winkelmedewerker-maastricht-Maastricht",
-    title: "Action Winkelmedewerker (Maastricht)",
+    slug: "action-winkelmedewerker-enschede-Enschede",
+    title: "Action Winkelmedewerker (Enschede)",
     orgName: "Action",
     descriptionHtml:
       "<p>Retail assistant role: cashier, shelf restocking, and helping customers. Fast paced discount retail environment.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Flexible store shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -641,13 +641,13 @@ RAW_JOBS.push(...NEW_JOBS3);
 
 const NEW_JOBS4: RawJob[] = [
   {
-    slug: "vue-bioscoop-medewerker-maastricht-Maastricht",
-    title: "Vue Cinema Employee (Maastricht)",
+    slug: "vue-bioscoop-medewerker-enschede-Enschede",
+    title: "Vue Cinema Employee (Enschede)",
     orgName: "Vue Cinemas",
     descriptionHtml:
       "<p>Work at the cinema: ticket scanning, bar service, and customer assistance. Flexible shifts including evenings.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Evening and weekend shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -655,13 +655,13 @@ const NEW_JOBS4: RawJob[] = [
     externalUrl: "https://www.werkenbijvue.nl/vacatures",
   },
   {
-    slug: "sacha-verkoopmedewerker-maastricht-Maastricht",
-    title: "Sacha Verkoopmedewerker (Maastricht)",
+    slug: "sacha-verkoopmedewerker-enschede-Enschede",
+    title: "Sacha Verkoopmedewerker (Enschede)",
     orgName: "Sacha",
     descriptionHtml:
       "<p>Fashion retail job: help customers, manage stock, and support visual merchandising in store.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "Part time retail shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -669,13 +669,13 @@ const NEW_JOBS4: RawJob[] = [
     externalUrl: "https://www.werkenbijsacha.nl/vacatures",
   },
   {
-    slug: "studentchauffeur-maastricht-ubiway-Maastricht",
-    title: "Student Driver (Maastricht region)",
+    slug: "studentchauffeur-enschede-ubiway-Enschede",
+    title: "Student Driver (Enschede region)",
     orgName: "Student Chauffeurs",
     descriptionHtml:
       "<p>Drive clients in their own cars to meetings or airports. Flexible scheduling, ideal for students with a driving license.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     workHours: "On call, flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -683,13 +683,13 @@ const NEW_JOBS4: RawJob[] = [
     externalUrl: "https://www.studentchauffeurs.nl/vacatures",
   },
   {
-    slug: "asa-talent-warehouse-worker-maastricht-Maastricht",
-    title: "Warehouse Worker (via ASA Talent, Maastricht)",
+    slug: "asa-talent-warehouse-worker-enschede-Enschede",
+    title: "Warehouse Worker (via ASA Talent, Enschede)",
     orgName: "ASA Talent",
     descriptionHtml:
-      "<p>Warehouse and fieldwork roles in Maastricht. Order picking, packing, and distribution center support.</p>",
+      "<p>Warehouse and fieldwork roles in Enschede. Order picking, packing, and distribution center support.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     englishFriendly: true,
     workHours: "Shifts",
     datePosted: new Date().toISOString().slice(0, 10),
@@ -698,13 +698,13 @@ const NEW_JOBS4: RawJob[] = [
     externalUrl: "https://www.asatalent.nl/vacatures",
   },
   {
-    slug: "redbull-wings-team-maastricht-Maastricht",
-    title: "Red Bull Wings Team Member (Maastricht)",
+    slug: "redbull-wings-team-enschede-Enschede",
+    title: "Red Bull Wings Team Member (Enschede)",
     orgName: "Red Bull",
     descriptionHtml:
       "<p>Promotional student role: represent Red Bull on campus and at events. Brand activation, sampling, and social engagement.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Maastricht",
+    addressLocality: "Enschede",
     englishFriendly: true,
     workHours: "Flexible student schedule",
     datePosted: new Date().toISOString().slice(0, 10),
