@@ -19,7 +19,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "delivery"
     ],
-    "externalUrl": "https://www.thuisbezorgd.nl/en/courier/enschede"
+    "externalUrl": "https://www.thuisbezorgd.nl/en/courier/enschede",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "dominos-fietsbezorger-enschede-2026-02-15",
@@ -38,7 +39,8 @@ export const NEW_JOBS: RawJob[] = [
       "delivery",
       "hospitality"
     ],
-    "externalUrl": "https://www.werkenbijdominos.nl/vacature/fietsbezorger-enschede-7"
+    "externalUrl": "https://www.werkenbijdominos.nl/vacature/fietsbezorger-enschede-7",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "dasko-ah-online-bezorger-enschede-2026-02-15",
@@ -60,7 +62,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "delivery"
     ],
-    "externalUrl": "https://www.werkenbijdasko.nl/vacatures/bezorger-enschede/"
+    "externalUrl": "https://www.werkenbijdasko.nl/vacatures/bezorger-enschede/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "jumbo-kuipersdijk-vakkenvuller-2026-02-15",
@@ -82,7 +85,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-vakkenvuller/2024-24454/"
+    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-vakkenvuller/2024-24454/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "jumbo-magnoliastraat-kassa-2026-02-15",
@@ -104,7 +108,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-kassamedewerker/2025-27301/"
+    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-kassamedewerker/2025-27301/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "studentkelner-horeca-twente-2026-02-15",
@@ -125,7 +130,8 @@ export const NEW_JOBS: RawJob[] = [
       "hospitality",
       "events"
     ],
-    "externalUrl": "https://studentkelner.nl/"
+    "externalUrl": "https://studentkelner.nl/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "mst-horecamedewerker-2026-02-15",
@@ -143,7 +149,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "hospitality"
     ],
-    "externalUrl": "https://www.uitzendbureau.nl/vacature/24166180-horecamedewerker-mst-ziekenhuis"
+    "externalUrl": "https://www.uitzendbureau.nl/vacature/24166180-horecamedewerker-mst-ziekenhuis",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "ns-ah-to-go-verkoopmedewerker-enschede-2026-02-15",
@@ -162,7 +169,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail",
       "hospitality"
     ],
-    "externalUrl": "https://www.werkenbijns.nl/vacatures/verkoopmedewerker-ah-to-go-enschede-enschede-1215054"
+    "externalUrl": "https://www.werkenbijns.nl/vacatures/verkoopmedewerker-ah-to-go-enschede-enschede-1215054",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "hema-vakantiebaan-enschede-op-de-brouwerij-2026-02",
@@ -180,7 +188,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://jobs.hema.com/nl/vacatures/vakantiebaan-407880"
+    "externalUrl": "https://jobs.hema.com/nl/vacatures/vakantiebaan-407880",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "kruidvat-verkoopmedewerker-wesseler-nering-enschede-2026-02",
@@ -200,7 +209,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijkruidvat.nl/vacatures/solliciteer/verkoopmedewerker-e204276"
+    "externalUrl": "https://www.werkenbijkruidvat.nl/vacatures/solliciteer/verkoopmedewerker-e204276",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "dreamland-weekendhulp-enschede-2026-02",
@@ -218,7 +228,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.dreamland.nl/vacatures/winkels/enschede/weekendhulp"
+    "externalUrl": "https://www.dreamland.nl/vacatures/winkels/enschede/weekendhulp",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "terstal-weekendhulp-enschede-miro-2026-02",
@@ -238,7 +249,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://werkenbijterstal.nl/vacature/weekendhulp-enschede-miro/"
+    "externalUrl": "https://werkenbijterstal.nl/vacature/weekendhulp-enschede-miro/",
+    "validThrough": "2026-03-01"
   },
   {
     "slug": "shuz-weekendkracht-enschede-2026-02",
@@ -256,7 +268,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.shuz.nl/vacatures/weekendkracht-enschede"
+    "externalUrl": "https://www.shuz.nl/vacatures/weekendkracht-enschede",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "susa-thuishulp-omgeving-enschede-2026-02",
@@ -278,7 +291,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "fieldwork"
     ],
-    "externalUrl": "https://www.susa.nl/bijbaan/regio/enschede"
+    "externalUrl": "https://www.susa.nl/bijbaan/regio/enschede",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "tempo-team-catering-medewerker-enschede-2026-02",
@@ -299,7 +313,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "hospitality"
     ],
-    "externalUrl": "https://www.tempo-team.nl/vacatures/721092/catering-medewerker-enschede"
+    "externalUrl": "https://www.tempo-team.nl/vacatures/721092/catering-medewerker-enschede",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "jumbo-enschede-kuipersdijk-versmedewerker-bijbaan-2026-02",
@@ -321,7 +336,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://nl.jobs.jumbo.com/vestiging/jumbo-enschede-kuipersdijk/"
+    "externalUrl": "https://nl.jobs.jumbo.com/vestiging/jumbo-enschede-kuipersdijk/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "lidl-hulpkracht-brinkstraat-enschede",
@@ -344,7 +360,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://jobs.lidl/nl/job/Enschede-Bijbaan-%28vanaf-15-jaar%29-Enschede-Brinkstraat-%282-12-uur%29/1273054801/"
+    "externalUrl": "https://jobs.lidl/nl/job/Enschede-Bijbaan-%28vanaf-15-jaar%29-Enschede-Brinkstraat-%282-12-uur%29/1273054801/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "mcdonalds-crew-enschede-spansland",
@@ -363,7 +380,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "hospitality"
     ],
-    "externalUrl": "https://www.werkenbijmcdonalds.nl/crew-member/job/P8-274985-1"
+    "externalUrl": "https://www.werkenbijmcdonalds.nl/crew-member/job/P8-274985-1",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "vanharen-bijbaan-verkoopmedewerker-enschede-noord",
@@ -380,7 +398,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijvanharen.nl/items/nl-nl/vacature/verkoop/bijbaan-verkoopmedewerker-enschede-noord-esmarkerrondweg"
+    "externalUrl": "https://www.werkenbijvanharen.nl/items/nl-nl/vacature/verkoop/bijbaan-verkoopmedewerker-enschede-noord-esmarkerrondweg",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "trekpleister-bijbaan-enschede-zonstraat",
@@ -402,7 +421,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijtrekpleister.nl/vacatures/verkoopmedewerker-bijbaan-e200059"
+    "externalUrl": "https://www.werkenbijtrekpleister.nl/vacatures/verkoopmedewerker-bijbaan-e200059",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "only-bijbaan-verkoopmedewerker-enschede-raadhuisstraat",
@@ -419,7 +439,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijonly.nl/only-bijbaan-verkoopmedewerker/bijbaan-verkoopmedewerker-enschederaad20250429"
+    "externalUrl": "https://www.werkenbijonly.nl/only-bijbaan-verkoopmedewerker/bijbaan-verkoopmedewerker-enschederaad20250429",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "csu-schoonmaak-medewerker-enschede-studentjob",
@@ -440,7 +461,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "fieldwork"
     ],
-    "externalUrl": "https://www.studentjob.nl/vacatures/5222413-schoonmaak-medewerker-in-enschede"
+    "externalUrl": "https://www.studentjob.nl/vacatures/5222413-schoonmaak-medewerker-in-enschede",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "broodbode-allround-horecamedewerker-brinkstraat-enschede",
@@ -458,7 +480,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "hospitality"
     ],
-    "externalUrl": "https://www.broodbode.nl/vacature/allround-horecamedewerker-brinkstraat"
+    "externalUrl": "https://www.broodbode.nl/vacature/allround-horecamedewerker-brinkstraat",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "lyceo-bijles-huiswerkbegeleider-enschede",
@@ -475,6 +498,7 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "tutoring"
     ],
-    "externalUrl": "https://www.lyceo.nl/werken-bij-lyceo/enschede/"
+    "externalUrl": "https://www.lyceo.nl/werken-bij-lyceo/enschede/",
+    "validThrough": "2026-03-15"
   }
 ];
