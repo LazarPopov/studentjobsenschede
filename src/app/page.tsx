@@ -77,12 +77,9 @@ export default function Page() {
 
   const blogPosts = [
     {
-      slug: "studenten-bijbaan-enschede",
-      title:
-        "Studenten bijbaan Enschede (2026) – Goed betaald, Engelstalig & weekend",
-      excerpt:
-        "De ultieme gids voor een studenten bijbaan in Enschede: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
-    },
+    slug: "get-started-ing-student",
+    title: "Opening a Dutch Bank Account (2026)",
+    excerpt: "If you are moving to the Netherlands for your studies, setting up a Dutch bank account can make daily life much easier. This guide explains why it matters." },
     {
       slug: "student-jobs-enschede-complete-guide-2026",
       title: "Student Jobs in Enschede — Complete Guide (2026)",
